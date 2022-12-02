@@ -1,0 +1,30 @@
+<!-- <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style> -->
+
+    <!-- <h1><%= user.name.first %></h1>
+    <p>Gender: <%= user.gender %></p>
+    <p>Age: <%= user.dob.age %></p> -->
+
+    <table border: 1px solid black>
+        <tr>
+            <th>Photo</th>
+            <th>First Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+
+        </tr>
+<% for(const user of userList) { %>
+
+        <tr>
+            <td><img src="<%=user.picture.medium> alt="/></td>
+            <td><%= user.name.first %></td>
+            <td><%= user.gender %></td>
+            <td><%= user.dob.age %></td>
+        </tr>
+<% } %>
+
+    </table>
+    
